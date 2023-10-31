@@ -6,6 +6,11 @@
     --primary-color: #0f1b4c;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 /* Chữ nhỏ đi */
 html {
     font-size: 62.5%;
@@ -63,16 +68,17 @@ a {
 .hero-wrap {
     position: relative;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     background: #e6f0ff;
-    height: 100vh;
-    min-height: 730px;
+    height: calc(100vh - 90px);
+    /* min-height: 730px; */
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    padding: 12px 0;
+    padding: 12px 0px;
 }
 
 .navbar ul {
@@ -107,15 +113,11 @@ a {
     border-radius: 8px;
 }
 
-.hero {
-    margin-top: 130px;
-}
-
-.hero .infor {
+.hero-wrap .infor {
     width: 51%;
 }
 
-.hero .sub-title {
+.hero-wrap .sub-title {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 1.5;
@@ -123,7 +125,7 @@ a {
     color: #687690;
 }
 
-.hero .title {
+.hero-wrap .title {
     font-weight: 700;
     font-size: 6.2rem;
     line-height: 1.19;
@@ -131,7 +133,7 @@ a {
     margin-top: 8px;
 }
 
-.hero .desc {
+.hero-wrap .desc {
     margin-top: 30px;
     font-weight: 400;
     font-size: 1.8rem;
